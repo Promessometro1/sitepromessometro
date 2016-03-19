@@ -1,0 +1,152 @@
+.btn-cadastre-se {
+    font-weight:bold;
+    padding:15px 30px;
+    color:#CC0000 !important;
+}
+
+.sub-header {
+    padding-bottom:10px;
+    border-bottom:1px solid #eee;
+}
+
+div#mapaBrasil svg path {
+    fill:#428BCA; stroke:#EEE;
+    cursor:pointer;
+}
+
+div#mapaBrasil svg path:hover {
+    fill:#337AB7;
+    stroke:#EEE
+}
+
+.navbar-brand {
+    min-width: 231px;
+    color: transparent !important;
+    background: url('../img/logo.png') no-repeat center;
+}
+
+.navbar-nav li button {
+    margin: 10px 8px;
+    font-weight: bold;
+}
+
+ul.navbar-nav li a {
+    font-size: 16px;
+    color: #FFF !important;
+    transition: 0.3s linear;
+}
+
+ul.navbar-nav li a:hover {
+    color: #87CEFA !important;
+    transition: 0.3s linear;
+}
+
+.navbar-inverse {
+    padding: 12px 0px;
+    background: rgba(8, 8, 8, 0.8);
+}
+
+.dropdown-inverse {
+    background: rgba(8, 8, 8, 0.8);
+    border-color: #080808;
+}
+
+.dropdown-inverse li a {
+    color: #999;
+}
+
+.dropdown-inverse li a:hover {
+    color: #FFF;
+    background: none;
+}
+
+.jumbotron {
+    margin: 0rem;
+}
+
+section.sobre {
+    color: #FFF;
+    padding: 36.5vh 0vh;
+    margin: auto;
+    background-image: url('../img/brasil.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+section.sobre div.container {
+    margin: auto;
+}
+
+section.sobre p {
+    padding-bottom: 3rem;
+}
+
+.caption h3 {
+    margin-bottom: 0rem;
+}
+
+q {
+    font-style: italic;
+}
+
+q::before{
+    color: #777;
+    font-size: 5rem;
+    content: "\201C";
+    line-height: 0rem;
+    padding-right: 0.5rem;
+    vertical-align: -1.6rem;
+}
+
+q::after {
+    color: #777;
+    font-size: 5rem;
+    content: "\201D";
+    line-height: 0rem;
+    vertical-align: -1.6rem;
+}
+
+.navbar-foot a:link {
+    font-size: 16px;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.navbar-foot a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.navbar-foot a:hover {
+    color: #87CEFA;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.navbar-foot a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.bg-depoimentos {
+    background: url('../img/bg-depoimentos.png');
+}
+
+.img-circle {
+    border-radius: 50%;
+    max-width: 220px;
+    max-height: 205px;
+}
+
+.thumbnail {
+    background: none !important;
+    border: none !important;
+}
+
+.caption p, h3 {
+    color: #fff;
+    text-align: center;
+}
