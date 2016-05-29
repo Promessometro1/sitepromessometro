@@ -1,0 +1,2 @@
+Apenas substitua sua pasta htdocs do xampps por essa.
+Lembre-se de fazer backup de sua pasta atual para não perder seus arquivos!
