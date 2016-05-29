@@ -1,2 +1,2 @@
-Apenas substitua sua pasta htdocs do xampps por essa.
+Apenas substitua sua pasta htdocs do xampps por essa. Não apague a pasta existente no xampps, apenas sobreponha.
 Lembre-se de fazer backup de sua pasta atual para não perder seus arquivos!
