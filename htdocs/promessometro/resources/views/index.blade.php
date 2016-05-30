@@ -314,6 +314,6 @@
     document.getElementById("cadastro").onclick = function () {
         location.href = "cadastro";
     };
-</script>
+    </script>
 </body>
 </html>

@@ -36,7 +36,7 @@
                     <li><a href="#">Parceiros</a></li>
                     <li><a href="#">Contato</a></li>
                     <li><button class="btn btn-primary btn-sm">Login</button></li>
-                    <li><button class="btn btn-default btn-sm">Cadastre-se</button></li>
+                    <li><button id="cadastro" class="btn btn-default btn-sm">Cadastre-se</button></li>
                 </ul>
             </div>
         </div>
@@ -82,6 +82,10 @@
                 </div>
             </div>
         </footer>
-
+        <script type="text/javascript">
+            document.getElementById("cadastro").onclick = function () {
+            location.href = "/promessometro/public/cadastro";
+            };
+        </script>
     </body>
 </html>

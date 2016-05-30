@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/cadastro', 'NovoCadastroController@returnView1');
+Route::post('/cadastro/2', 'NovoCadastroController@cadastrar');
+Route::get('/cadastro/2', 'NovoCadastroController@returnView2');
+
+
 Route::get('/tema', function () {
     return view('temaPrincipal');
 });
