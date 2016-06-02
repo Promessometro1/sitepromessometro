@@ -86,7 +86,7 @@
 
                         </div>
                     </div>
-                    <form role="form" action="envio">
+                    <form role="form" action="/promessometro/public/cadastro/envio" method="post">
                         <div class="row setup-content" id="step-1">
 
                             <h2>Cadastro de usuário </h2>
@@ -133,10 +133,10 @@
 
                             <div class="col-xs-6">
                                 <div class="control-group">
-
-                                    <label class="control-label" for="Cidade">Cidade</label>
+                                    <!-- Cidade-->
+                                    <label class="control-label" for="password">Cidade</label>
                                     <div class="controls">
-                                        <input type="text" id="ID_CIDADE" class="input-xlarge">
+                                        <input type="text" id="ID_CIDADEUSER" name="ID_CIDADEUSER" placeholder="" class="input-xlarge">
                                         <p class="help-block"></p>
                                     </div>
                                 </div>
@@ -145,7 +145,7 @@
 
                                     <label class="control-label" for="osa">OSA</label>
                                     <div class="controls">
-                                        <input type="text" id="ID_OSA" class=" input-xlarge ">
+                                        <input type="text" id="ID_OSA" name-'ID_OSA' class=" input-xlarge ">
                                         <p class=" help-block "></p>
                                     </div>
 
@@ -155,7 +155,7 @@
 
                                     <label class="control-label" for="cargo">Cargo</label>
                                     <div class="controls">
-                                        <input type="text" id="CARGO" class=" input-xlarge ">
+                                        <input type="text" id="CARGO" name='CARGO' class=" input-xlarge ">
                                         <p class=" help-block "></p>
                                     </div>
 
@@ -163,7 +163,7 @@
 
                             </div>
 
-                            <button id="next1" class="btn btn-primary nextBtn btn-lg pull-right " type="button" onclick="exibirForm2()">Next</button>
+                            <button id="next1" class="btn btn-primary nextBtn btn-lg pull-right " type="button" onclick="exibirForm2()">Próximo</button>
 
                         </div>
                         <div class="row setup-content" id="step-2" style="display:none;">
@@ -191,7 +191,7 @@
 
                                 <div class="control-group">
                                     <!-- Area-->
-                                    <label class="control-label" for="password">Senha</label>
+                                    <label class="control-label" for="password">Área em m²</label>
                                     <div class="controls">
                                         <input type="text" id="AREAM2" name="AREAM2" placeholder="" class="input-xlarge">
                                         <p class="help-block"></p>
@@ -214,26 +214,116 @@
 
                                     <label class="control-label" for="Portal">Site da Cidade</label>
                                     <div class="controls">
-                                        <input type="text" id="END_PORTAL" class="input-xlarge">
+                                        <input type="text" id="END_PORTAL" name='END_PORTAL' class="input-xlarge">
                                         <p class="help-block"></p>
                                     </div>
                                 </div>
                             </div>
 
-                            <button id="next2" class="btn btn-primary nextBtn btn-lg pull-right " type="button" onclick="exibirForm3()">Next</button>
+                            <button id="next2" class="btn btn-primary nextBtn btn-lg pull-right " type="button" onclick="exibirForm3()">Próximo</button>
                         </div>
 
 
                         <div class="row setup-content" id="step-3" style="display:none;">
-                            <div class="col-xs-12">
+                            <h2>Cadastro de metas </h2>
+                            
+                            <div class="col-xs-6">
 
-                                <button id="next3" class="btn btn-primary nextBtn btn-lg pull-right" type="button" onclick="exibirForm4()">Next</button>
+                                <div class="control-group">
+
+                                    <label class="control-label" for="osa">Tema</label>
+                                    <div class="controls">
+                                        <input type="text" id="ID_TEMA" name="ID_TEMA" class=" input-xlarge ">
+                                        <p class=" help-block "></p>
+                                    </div>
+
+                                </div>
+
+                                <div class="control-group">
+                                    <!-- Objetivo -->
+                                    <label class="control-label" for="OBJETIVO">Objetivo</label>
+                                    <div class="controls">
+                                        <input type="text" id="OBJETIVO" name="OBJETIVO" placeholder="" class="input-xlarge" required>
+                                        <span class="help-block"></span>
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+                                    <!-- Resumo -->
+                                    <label class="control-label" for="RESUMO">Resumo</label>
+                                    <div class="controls">
+                                        <input type="text" id="RESUMO" name="RESUMO" placeholder="" class="input-xlarge">
+                                        <span class="help-block"></span>
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+                                    <!-- Descrição-->
+                                    <label class="control-label" for="DESCRICAO">Descrição</label>
+                                    <div class="controls">
+                                        <input type="text" id="DESCRICAO" name="DESCRICAO" placeholder="" class="input-xlarge">
+                                        <p class="help-block"></p>
+                                    </div>
+                                </div> 
                             </div>
+
+                            <div class="col-xs-6">
+                                <div class="control-group">
+
+                                    <label class="control-label" for="DATA_INICIO">Data de Início</label>
+                                    <div class="controls">
+                                        <input type="text" id="DATA_INICIO" name="DATA_INICIO" class="input-xlarge">
+                                        <p class="help-block"></p>
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+
+                                    <label class="control-label" for="osa">Data Final</label>
+                                    <div class="controls">
+                                        <input type="text" id="DATA_FIM" name="DATA_FIM" class=" input-xlarge ">
+                                        <p class=" help-block "></p>
+                                    </div>
+
+                                </div>
+
+                                <div class="control-group">
+
+                                    <label class="control-label" for="cargo">Status Atual da Meta</label>
+                                    <div class="controls">
+                                        <input type="text" id="STATUS_META" name="STATUS_META" class=" input-xlarge ">
+                                        <p class=" help-block "></p>
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+
+                                    <label class="control-label" for="osa">Gestão a qual pertence</label>
+                                    <div class="controls">
+                                        <input type="text" id="ID_GESTAO" name="ID_GESTAO" class=" input-xlarge ">
+                                        <p class=" help-block "></p>
+                                    </div>
+
+                                </div>
+
+                                <div class="control-group">
+                                    <!-- Pop Beneficiada -->
+                                    <label class="control-label" for="ID_POP_BENEFICIADA">População Beneficiada</label>
+                                    <div class="controls">
+                                        <input type="text" id="ID_POP_BENEFICIADA" name="ID_POP_BENEFICIADA" placeholder="" class="input-xlarge">
+                                        <p class="help-block"></p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <button id="next3" class="btn btn-primary nextBtn btn-lg pull-right " type="button" onclick="exibirForm4()">Próximo</button>
                         </div>
                         <div class="row setup-content" id="step-4" style="display:none;">
                             <div class="col-xs-12">
 
-                                <button id="next4" class="btn btn-primary nextBtn btn-lg pull-right" type="button">Next</button>
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                <input id="next4" class="btn btn-primary nextBtn btn-lg pull-right" type="submit" value="Concluído">
                             </div>
                         </div>
                     </form>
@@ -297,7 +387,7 @@
                 document.getElementById('next1').style.display = "none";
                 document.getElementById('next2').style.display = "none";
                 document.getElementById('next3').style.display = "none";
-                document.getElementById('next4').style.display = "none";
+                document.getElementById('next4').style.display = "";
                 document.getElementById('step-4btn').removeAttribute("disabled");
                 document.getElementById("step-4btn").className = "btn-primary btn-circle btn";
                 document.getElementById("step-1btn").className = "btn-default btn-circle btn";
